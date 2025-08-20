@@ -27,7 +27,20 @@
 	echo "++A -> A = 1 + A <br>";
 	echo "--A -> A = 1 - A <br>";
 
+	$num1 = 10;
+	$num2 = 75;
 
+	$resp1 = $num1 + $num2;
+	$resp2 = $num1 - $num2;
+	$resp3 = $num1 * $num2;
+	$resp4 = $num1 / $num2;
+
+	echo "<br>";
+
+	echo "A soma de $num1 e $num2 é $resp1 <br>";
+	echo "A subtração de $num1 e $num2 é $resp2 <br>";
+	echo "A multiplicação de $num1 e $num2 é $resp3 <br>";
+	echo "A divisão de $num1 e $num2 é $resp4 <br>";
 	
 
  ?>
