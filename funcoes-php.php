@@ -1,5 +1,7 @@
 <?php 
 	/*
+	
+	// [EXEMPLO 1]
 
 	// Criando uma função 'fechada'
 	function somaValor (){
@@ -15,6 +17,8 @@
 	// Chamando/ executando a função 
 	somaValor();
 	*/
+
+	// [EXEMPLO 2]
 
 	/*
 		// Criando uma função com parâmetros
@@ -32,6 +36,9 @@
 
 	somaValor($valor1, $valor2)
 	*/
+
+
+	// [EXEMPLO 3]
 
 	// Criando uma função com 'return', para deixar a função ainda mais enxuta
 	function somaValor ($n1, $n2){
