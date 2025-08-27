@@ -19,7 +19,7 @@
 	Segundo Valor: <br>
 	";
 
-	$userOpt = 4;
+	$userOpt = 40;
 
 	$num1 = 100; $num2 = 120;
 
@@ -77,7 +77,5 @@
 	else{
 		echo "<br> Entrada inválida! Tente novamente";
 	}
-
-
 
  ?>
