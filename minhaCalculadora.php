@@ -19,9 +19,9 @@
 	Segundo Valor: <br>
 	";
 
-	$userOpt = 40;
+	$userOpt = 4;
 
-	$num1 = 5; $num2 = 25;
+	$num1 = 100; $num2 = 120;
 
 	// Funções da Calculadora
 	function calcSoma($v1, $v2){
@@ -40,33 +40,38 @@
 		return $v1 * $v2;
 	}
 
+	function printResult($n1, $n2, $resultado, $operacao){
+		echo "<br> Os números digitados foram $n1 e $n2 <br>";
+		echo "A operação escolhida foi  $operacao <br>";
+		echo "O resultado da operação é $resultado <br>";
+	}
+
 	// Simulando escolhas do usuário para chamar as funções
 	if($userOpt == 1){
+		$operacao = "[1] Adição";
 		$resultado = calcSoma($num1, $num2);
-		echo "<br> Os números digitados foram $num1 e $num2 <br>";
-		echo "A operação escolhida foi [1] Adição <br>";
-		echo "$num1 + $num2 = $resultado <br>";
+		printResult($num1, $num2, $resultado, $operacao);
 	}
 
 	else if($userOpt == 2){
+		$operacao = "[2] Subtração";
 		$resultado = calcSubtr($num1, $num2);
-		echo "<br> Os números digitados foram $num1 e $num2 <br>";
-		echo "A operação escolhida foi [2] Subtração <br>";
-		echo "$num1 - $num2 = $resultado <br>";
+		printResult($num1, $num2, $resultado, $operacao);
+		
 	}
 
 	else if($userOpt == 3){
+		$operacao = "[3] Divisão";
 		$resultado = calcDiv($num1, $num2);
-		echo "<br> Os números digitados foram $num1 e $num2 <br>";
-		echo "A operação escolhida foi [3] Divisão <br>";
-		echo "$num1 / $num2 = $resultado <br>";
+		printResult($num1, $num2, $resultado, $operacao);
+	
 	}
 
 	else if($userOpt == 4){
+		$operacao = "[4] Multiplicação";
 		$resultado = calcMult($num1, $num2);
-		echo "<br> Os números digitados foram $num1 e $num2 <br>";
-		echo "A operação escolhida foi [4] Multiplicação <br>";
-		echo "$num1 X $num2 = $resultado <br>";
+		printResult($num1, $num2, $resultado, $operacao);
+
 	}
 
 	else{
