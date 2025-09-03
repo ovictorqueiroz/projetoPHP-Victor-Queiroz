@@ -1,5 +1,5 @@
 <?php 
-	$salBruto = 2500;
+	$salBruto = 2200;
 
 	function calcINSS($salInit){
 		return ($salInit * 14 / 100);
@@ -11,20 +11,20 @@
 		}
 	
 		else if($salInit >2428.81 && $salInit < 2826.65){
-			return ($salInit * 0.075);
+			return ($salInit * 7.5 / 100);
 		}
 
 
 		else if($salInit >2826.66 && $salInit < 3751.05){
-			return ($salInit * 0.015);
+			return ($salInit * 15 / 100);
 		}
 
 		else if($salInit > 3751.06 && $salInit < 4664.68){
-			return ($salInit * 0.0225);
+			return ($salInit * 22.5 / 100);
 		}
 
 		else {
-			return ($salInit * 0.0275);
+			return ($salInit * 27.5 / 100);
 		}
 	}
 
