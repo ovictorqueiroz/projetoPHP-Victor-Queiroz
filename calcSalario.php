@@ -1,5 +1,7 @@
 <?php 
-	$salBruto = 2200;
+	$salBruto = 5000;
+	$clube = 'C';
+
 
 	function calcINSS($salInit){
 		return ($salInit * 14 / 100);
@@ -11,54 +13,48 @@
 		}
 	
 		else if($salInit >2428.81 && $salInit < 2826.65){
-			return ($salInit * 7.5 / 100);
+			return ($salInit * (7.5 / 100));
 		}
 
 
 		else if($salInit >2826.66 && $salInit < 3751.05){
-			return ($salInit * 15 / 100);
+			return ($salInit * (15 / 100));
 		}
 
 		else if($salInit > 3751.06 && $salInit < 4664.68){
-			return ($salInit * 22.5 / 100);
+			return ($salInit * (22.5 / 100));
 		}
 
 		else {
-			return ($salInit * 27.5 / 100);
+			return ($salInit * (27.5 / 100));
 		}
 	}
 
-	function catIR($salInit){
-		if ($salInit < 2428.80){
-			return 1;
+	function desClube($c){
+		switch ($c) {
+			case 'A':
+				return 50;
+				break;
+			
+			case 'B':
+				return 30;
+				break;
+
+			default:
+				return 20;
+				break;
 		}
+	}
+
+	$salLiq = ((($salBruto - calcINSS($salBruto)) - calcIR($salBruto)) - desClube($clube));
+
+	echo "=== INFORME SALÁRIO LÍQUIDO === <br>";
+	echo "Salário Bruto: R$ ", $salBruto, "<br>";
+	echo "Desconto INSS: R$ ", calcINSS($salBruto), "<br>";
+	echo "Desconto IR: R$ ", calcIR($salBruto), "<br>";
+	echo "Clube de Benefícios: ", $clube, " - R$ ", desClube($clube), "<br>";
+	echo "Salário Líquido: R$ ", $salLiq;
 	
-		else if($salInit >2428.81 && $salInit < 2826.65){
-			return 2;
-		}
-
-
-		else if($salInit >2826.66 && $salInit < 3751.05){
-			return 3;
-		}
-
-		else if($salInit > 3751.06 && $salInit < 4664.68){
-			return 4;
-		}
-
-		else {
-			return 5;
-		}
-	}
-
-
-	$salLiq = (($salBruto - calcINSS($salBruto)) - calcIR($salBruto));
-
-	echo "=== CALCULADORA SALÁRIO LÍQUIDO === <br>";
-	echo "Seu salário é R$ $salBruto <br>";
-	echo "O valor do desconto do seu INSS é de R$ ",  calcINSS($salBruto), "<br>";
-	echo "Você se enquadra na Faixa ", catIR($salBruto)," do Imposto de Renda <br>", "O valor do desconto do seu IR é de R$ ", calcIR($salBruto), "<br>";
-	echo "Seu salário líquido é de R$ ", $salLiq;
 
 	
  ?>
