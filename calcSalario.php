@@ -55,6 +55,6 @@
 	echo "Clube de Benefícios: ", $clube, " - R$ ", desClube($clube), "<br>";
 	echo "Salário Líquido: R$ ", $salLiq;
 	
-
+	
 	
  ?>
