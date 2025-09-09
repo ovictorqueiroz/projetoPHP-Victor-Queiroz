@@ -14,8 +14,12 @@
 	}
 	*/
 
+
+
+
+	/*
 	// Exercício 2
-	$numInput = 25.49;
+	$numInput = 20;
 
 	if($numInput % 10 == 0 && is_int($numInput) == True){
 		echo "$numInput é divisível por 10";
@@ -32,4 +36,23 @@
 	else{
 		echo "$numInput não é divisível nem por 10, 5 ou 2.";
 	}
+	*/
+
+
+
+	// Exercício 3
+	$nome = 'Camila'; $idade = 15; $sexo = 'F';
+
+	if($idade < 25 && $sexo ='F'){
+		echo "NOME: $nome <br>";
+		echo "IDADE: $idade anos <br>";
+		echo "SEXO: $sexo <br>";
+		echo "STATUS: ACEITA";
+	} else {
+		echo "NOME: $nome";
+		echo "IDADE: $idade";
+		echo "SEXO: $sexo";
+		echo "STATUS: NÃO ACEITA";
+	}
+
  ?>
