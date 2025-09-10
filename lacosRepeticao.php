@@ -39,20 +39,42 @@
 	*/
 
 
-
+	/*
 	// Exercício 3
-	$nome = 'Camila'; $idade = 15; $sexo = 'F';
+	$nome = 'Carlos'; $idade = 35; $sexo = 'M';
 
 	if($idade < 25 && $sexo ='F'){
 		echo "NOME: $nome <br>";
-		echo "IDADE: $idade anos <br>";
+		echo "IDADE: $idade anos  <br>";
 		echo "SEXO: $sexo <br>";
 		echo "STATUS: ACEITA";
 	} else {
-		echo "NOME: $nome";
-		echo "IDADE: $idade";
-		echo "SEXO: $sexo";
+		echo "NOME: $nome <br>";
+		echo "IDADE: $idade <br>";
+		echo "SEXO: $sexo <br>";
 		echo "STATUS: NÃO ACEITA";
 	}
+	*/
+
+
+
+	// Exercício 4
+	$A = 0; $B = 260; $C = 184;
+	$m = True;
+
+
+		$temp = 0;
+
+		if($A < $B && $A < $C){
+			$temp = $A;
+			$A = $C;
+			$C = $temp;
+
+			if($B < $C){
+				$temp = $B;
+				
+			}
+			echo "$A , $B, $C ";
+		}
 
  ?>
