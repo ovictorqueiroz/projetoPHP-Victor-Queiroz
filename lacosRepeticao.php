@@ -57,7 +57,7 @@
 	*/
 
 
-
+	/*
 	// Exercício 4
 	$A = 0; $B = 260; $C = 184;
 	$m = True;
@@ -72,9 +72,40 @@
 
 			if($B < $C){
 				$temp = $B;
-				
+
 			}
 			echo "$A , $B, $C ";
 		}
+	*/
+
+	//Exercicio 5
+
+		$altura1 = 1.75;
+		$altura2 = 1.50;
+		$altura3 = 1.67;
+		
+		$idade1 = 26;
+		$idade2 = 15;
+		$idade3 = 34;
+
+		$sexo1 = 'M';
+		$sexo2 = 'F';
+		$sexo3 = 'F';
+
+		function maiorAltura($a1, $a2, $a3){
+			$maxAlt = "";
+
+			if ($a1 > $a2 && $a1 > $a3){
+				$maxAlt = $a1;
+			} else if($a2 > $a1 && $a2 > $a3){
+				$maxAlt = $a2;
+			} else{
+				$maxAlt = $a3;
+			}
+
+			return $maxAlt;
+		}
+
+		echo "A maior altura do grupo é ", maiorAltura($altura1, $altura2, $altura3), "m";
 
  ?>
