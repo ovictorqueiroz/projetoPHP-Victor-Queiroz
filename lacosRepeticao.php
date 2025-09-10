@@ -106,6 +106,24 @@
 			return $maxAlt;
 		}
 
-		echo "A maior altura do grupo é ", maiorAltura($altura1, $altura2, $altura3), "m";
+		function menorAltura($a1, $a2, $a3){
+			$minAlt = "";
+
+			if ($a1 < $a2 && $a1 < $a3){
+				$minAlt = $a1;
+			} else if($a2 < $a1 && $a2 < $a3){
+				$minAlt = $a2;
+			} else{
+				$minAlt = $a3;
+			}
+
+			return $minAlt;
+		}
+
+
+
+		echo "A maior altura do grupo é ", maiorAltura($altura1, $altura2, $altura3), "m <br>";
+
+		echo "A menor altura do grupo é ", menorAltura($altura1, $altura2, $altura3), "m <br>";
 
  ?>
