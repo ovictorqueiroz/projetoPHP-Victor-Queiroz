@@ -120,7 +120,14 @@
 			return $minAlt;
 		}
 
+		function mediaMulheres($i1, $i2, $i3,$s1, $s2, $s3, ){
+			$nF = 0;
 
+			if(){
+				
+			}
+
+		}
 
 		echo "A maior altura do grupo é ", maiorAltura($altura1, $altura2, $altura3), "m <br>";
 
