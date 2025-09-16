@@ -59,25 +59,40 @@
 
 	/*
 	// Exercício 4
-	$A = 0; $B = 260; $C = 184;
-	$m = True;
+	$A = 100; $B = 800; $C = 100;
 
 
 		$temp = 0;
 
-		if($A < $B && $A < $C){
+		if($A < $B){
 			$temp = $A;
 			$A = $C;
 			$C = $temp;
-
-			if($B < $C){
-				$temp = $B;
-
-			}
-			echo "$A , $B, $C ";
 		}
+
+		if($B < $A && $B < $C){
+
+			$temp = $B;
+			$B = $C;
+			$C = $temp;
+		}
+
+		if($B > $A && $B > $C){
+			$temp = $B;
+			$B = $A;
+			$A = $temp;
+		}
+
+		if($C > $B && $C > $A){
+			$temp = $C;
+			$C= $A;
+			$A = $temp;
+		}	
+
+		echo "$A , $B, $C";
 	*/
 
+	/*
 	//Exercicio 5
 
 		$altura1 = 1.75;
@@ -132,5 +147,6 @@
 		echo "A maior altura do grupo é ", maiorAltura($altura1, $altura2, $altura3), "m <br>";
 
 		echo "A menor altura do grupo é ", menorAltura($altura1, $altura2, $altura3), "m <br>";
+		*/
 
  ?>
