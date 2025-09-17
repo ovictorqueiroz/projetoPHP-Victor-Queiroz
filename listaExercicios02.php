@@ -2,19 +2,26 @@
 	
 	//EXERCICIO 01
 	
-	$userNum = 999;
 	$maiorNum = 0;
+	$userNum = 1;
+	$i = 0;
 
-	while ($userNum != 0) {
-
+	while ($userNum != 0){
+		$userNum = rand(0,100);
+		if ($userNum != 0) {
 			if($userNum > $maiorNum){
-			$maiorNum = $userNum;
+				$maiorNum = $userNum;
 			}
-			
-		$userNum = rand(0,5);
+		}
+
+		echo "Iteração $i: <br>";
+		echo "Número escolhido: $userNum <br>";
+		echo "O maior número é $maiorNum <br>";
+		echo "<br>";
+		$i++;
+
 	}
 
-	echo "O maior número é $maiorNum";
 	
 
 	/*
