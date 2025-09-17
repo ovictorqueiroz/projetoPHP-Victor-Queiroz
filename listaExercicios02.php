@@ -11,8 +11,12 @@
 			break;
 		}
 
-		else if($userNum > $maiorNum){
+		else {
+
+			if($userNum > $maiorNum){
 			$maiorNum = $userNum;
+			}
+			
 		}
 	}
 	echo "O maior número é $maiorNum";
