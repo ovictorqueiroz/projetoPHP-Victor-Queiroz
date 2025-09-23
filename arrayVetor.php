@@ -52,4 +52,19 @@ echo "<pre>";
 	var_dump($teste);
 echo "</pre>";
 
+
+//usando for para percorrer o array
+echo "<br>";
+
+$num = [];
+
+for ($i=0; $i <6; $i++){
+	$num[$i] = 10;
+	
+}
+
+for ($i=0; $i <6; $i++){
+	echo "$i. O valor é $num[$i] <br>";
+}
+ 
  ?>
