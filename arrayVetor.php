@@ -29,13 +29,27 @@ echo "<br>";
 echo "Vetor de carros: <br>";
 echo($carros[0] . "<br>" . $carros[1] . "<br>" . $carros[2] . "<br>");
 
-//
+//print_r e var_dump
 $mail[] = "joao.silva@gmail.com"; 
 $mail[] = "cristhian.borges@hotmail.com"; 
 $mail[] = "ana.menezes@outlook.com"; 
 
 echo "Testando print_r e var_dump <br>";
+
+echo "<pre>";
 print_r($mail);
+echo "</pre>";
+
+echo "<pre>";
+	var_dump($mail);
+echo "</pre>";
+
 echo "<br>";
-var_dump($mail)
+
+	$teste = array('Cleiton', 26, 1.75, true);
+
+echo "<pre>";
+	var_dump($teste);
+echo "</pre>";
+
  ?>
