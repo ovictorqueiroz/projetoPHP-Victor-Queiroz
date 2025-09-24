@@ -8,6 +8,8 @@ foreach ($nomeAlunos as $nomes) {
 	echo "<br> $nomes";
 }
 
+echo "<br>";
+
 //Exemplo2
 $numeros = [1,2,3,4,5];
 
@@ -18,7 +20,6 @@ foreach($numeros as $valor){
 echo "<br>";
 
 //Exemplo3 
-
 $usernames["MA"] = "Maria";
 $usernames["PE"] = "Pedro";
 $usernames["MU"] = "Maurício";
@@ -32,7 +33,7 @@ echo "</pre>";
 $s = ['João' => 1000, 'Maria' => 2000, 'José' => 6000];
 
 foreach ($s as $salario){
-	echo "O Salário de João é $salario";
+	echo "<br> O Salário é R$ $salario";
 }
 
 ?>
