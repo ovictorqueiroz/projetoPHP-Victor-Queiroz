@@ -83,33 +83,36 @@
 	echo "A soma da Matriz 3 é: $somaM3 <br>";
 	*/
 
-	/*
+	
 	//[EXERCICIO 03]
 	echo "<br> EXERCICIO 03 <br>";
 
 	$alunos = [
-		["nome" => "Ana", "nota" => 8],
-		["nome" => "Bernardo", "nota" => 7.5],
-		["nome" => "Cláudio", "nota" =>7],
-		["nome" => "Deyse", "nota" =>6],
-		["nome" => "Emanuel", "nota" =>5],
-		["nome" => "Fabrício", "nota" =>9],
-		["nome" => "Guilherme", "nota" =>9.5],
-		["nome" => "Heitor", "nota" =>6.5],
-		["nome" => "Igor", "nota" =>8.5],
-		["nome" => "Jacó", "nota" => 10],
+		["Ana",  8],
+		["Bernardo",  7.5],
+		["Cláudio", 7],
+		["Deyse", 6],
+		["Emanuel", 5],
+		["Fabrício", 9],
+		["Guilherme", 9.5],
+		["Heitor", 6.5],
+		["Igor", 8.5],
+		["Jacó",  10],
 	];
 
+
+	
+	$somaNotas = 0;
+	
 	for($l = 0; $l < 10; $l++){
-		for ($i=0; $i < 2; $i++) {
-			for ($n=0; $n < ; $n++) { 
-				
-			}
-			
-		}
-		echo "<br>";
+		$somaNotas += $alunos[$l][1];
 	}
-	*/
+
+	$media = $somaNotas / (count($alunos));
+
+	echo "A média da turma é: $media"
+	
+	
 
 	/*
 	//[EXERCICIO 04]
