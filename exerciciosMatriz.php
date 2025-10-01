@@ -161,9 +161,9 @@
 	["ELIZANDRA", "SALTO", "F", 25],
 	["FABIO", "SÃO PAULO", "M", 50],
 	["GUSTAVO", "BERTIOGA", "M", 15],
-	["HEVERTON", "ITAPECERICA DA SERRA", "M", 30],
+	["HEVERTON", "ITAPECERICA DA SERRA", "M", 17],
 	["IEDA", "SANTOS", "F", 65],
-	["JOANA", "ITU", "F", 23]
+	["JOANA", "ITU", "F", 16]
 ];
 
 	echo "<br> NOME | IDADE <br>";
@@ -171,7 +171,43 @@
 	for($l = 0; $l < count($cadastro); $l++){
 			echo $cadastro[$l][0] . " | " . $cadastro[$l][3] . "<br>";
 			echo "<br>";
+
 	}
+
+	echo "<br> NOME | CIDADE <br>";
+	for($l = 0; $l < count($cadastro); $l++){
+			if($cadastro[$l][1] == "SANTOS"){
+
+			echo $cadastro[$l][0] . " | " . $cadastro[$l][1] . "<br>";
+			echo "<br>";
+			}
+				
+	}
+
+	echo "<br> NOME | MAIOR DE IDADE <br>";
+	for($l = 0; $l < count($cadastro); $l++){
+			if($cadastro[$l][3] > 18){
+
+			echo $cadastro[$l][0] . " | " . $cadastro[$l][3] . "<br>";
+			echo "<br>";
+			}
+				
+	}
+
+	echo "<br> NOME | SEXO MASCULINO <br>";
+
+	$contM =0;
+
+	for($l = 0; $l < count($cadastro); $l++){
+			if($cadastro[$l][2]  == "M"){
+				$contM++;
+			}
+				
+	}
+
+	echo "Há $contM pessoas do sexo masculino no grupo";
+
+
 
 
 
