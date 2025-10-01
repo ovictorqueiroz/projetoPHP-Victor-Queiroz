@@ -83,35 +83,47 @@
 	echo "A soma da Matriz 3 é: $somaM3 <br>";
 	*/
 
-	
+	/*
 	//[EXERCICIO 03]
 	echo "<br> EXERCICIO 03 <br>";
 
 	$alunos = [
 		["Ana",  8],
-		["Bernardo",  7.5],
+		["Bernardo",  5],
 		["Cláudio", 7],
-		["Deyse", 6],
+		["Deyse", 5],
 		["Emanuel", 5],
 		["Fabrício", 9],
 		["Guilherme", 9.5],
 		["Heitor", 6.5],
 		["Igor", 8.5],
-		["Jacó",  10],
+		["Jacó",  6],
+		["Isabelle", 5],
+		["Pedro", 10]
 	];
 
-
-	
+	$mlrAluno = "";
+	$maiorNota = 0;
 	$somaNotas = 0;
 	
-	for($l = 0; $l < 10; $l++){
+	for($l = 0; $l < count($alunos); $l++){
+
 		$somaNotas += $alunos[$l][1];
+
+		for ($i=0; $i < 2; $i++) {
+
+			if($alunos[$l][1] > $maiorNota){
+				$maiorNota = $alunos[$l][1];
+				$mlrAluno = $alunos[$l][$i];
+			}
+		}
 	}
 
 	$media = $somaNotas / (count($alunos));
 
-	echo "A média da turma é: $media"
-	
+	echo "A média da turma é: $media <br>";
+	echo "A maior nota da turma é: $maiorNota e foi $mlrAluno quem tirou";
+	*/
 	
 
 	/*
@@ -138,5 +150,20 @@
 	echo $ano[$input];
 	*/
 
+	//[EXERCICIO 05]
+	echo "<br> EXERCICIO 05 <br>";
 
+	$cadastro = [
+		["ALBERTO", "SANTOS", "M", 00],
+		["ALBERTO", "SANTOS", "M", 00],
+		["ALBERTO", "SANTOS", "M", 00],
+		["ALBERTO", "SANTOS", "M", 00],
+		["ALBERTO", "SANTOS", "M", 00],
+		["ALBERTO", "SANTOS", "M", 00],
+		["ALBERTO", "SANTOS", "M", 00],
+		["ALBERTO", "SANTOS", "M", 00],
+		["ALBERTO", "SANTOS", "M", 00],
+		["ALBERTO", "SANTOS", "M", 00],
+		["ALBERTO", "SANTOS", "M", 00],
+	];
 ?>
