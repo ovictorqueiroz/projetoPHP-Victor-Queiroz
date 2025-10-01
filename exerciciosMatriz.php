@@ -154,16 +154,25 @@
 	echo "<br> EXERCICIO 05 <br>";
 
 	$cadastro = [
-		["ALBERTO", "SANTOS", "M", 00],
-		["ALBERTO", "SANTOS", "M", 00],
-		["ALBERTO", "SANTOS", "M", 00],
-		["ALBERTO", "SANTOS", "M", 00],
-		["ALBERTO", "SANTOS", "M", 00],
-		["ALBERTO", "SANTOS", "M", 00],
-		["ALBERTO", "SANTOS", "M", 00],
-		["ALBERTO", "SANTOS", "M", 00],
-		["ALBERTO", "SANTOS", "M", 00],
-		["ALBERTO", "SANTOS", "M", 00],
-		["ALBERTO", "SANTOS", "M", 00],
-	];
+	["ALBERTO", "SANTOS", "M", 38],
+	["BEATRIZ", "PIRACICABA", "F", 25],
+	["CLEIDE", "SÃO PAULO", "F", 49],
+	["DANIEL", "SANTOS", "M", 33],
+	["ELIZANDRA", "SALTO", "F", 25],
+	["FABIO", "SÃO PAULO", "M", 50],
+	["GUSTAVO", "BERTIOGA", "M", 15],
+	["HEVERTON", "ITAPECERICA DA SERRA", "M", 30],
+	["IEDA", "SANTOS", "F", 65],
+	["JOANA", "ITU", "F", 23]
+];
+
+	echo "<br> NOME | IDADE <br>";
+
+	for($l = 0; $l < count($cadastro); $l++){
+			echo $cadastro[$l][0] . " | " . $cadastro[$l][3] . "<br>";
+			echo "<br>";
+	}
+
+
+
 ?>
