@@ -1,19 +1,20 @@
 <?php 
 // Exercícios - Vetores - 07/10/25
 
+/*
 //EXERCÍCIO 01
 
 $turma = [
-	["nome" => "Huguinho", "nota" => 10],
-	["nome" => "Luizinho", "nota" => 8.75],
-	["nome" => "Zézinho", "nota" => 7.0],
-	["nome" => "Fred", "nota" => 6.5],
-	["nome" => "Daphne", "nota" => 9.0],
-	["nome" => "Velma", "nota" => 10],
+	["nome" => "Huguinho", "nota" => 3],
+	["nome" => "Luizinho", "nota" => 4],
+	["nome" => "Zézinho", "nota" => 6.0],
+	["nome" => "Fred", "nota" => 5.5],
+	["nome" => "Daphne", "nota" => 5.0],
+	["nome" => "Velma", "nota" => 5],
 	["nome" => "Salsicha", "nota" => 7.0],
 	["nome" => "Scooby", "nota" => 6.0],
-	["nome" => "Pernalonga", "nota" => 8.0],
-	["nome" => "Patolino", "nota" => 9.5],
+	["nome" => "Pernalonga", "nota" => 7.0],
+	["nome" => "Patolino", "nota" => 10],
 ];
 
 function mediaTurma($array){
@@ -34,19 +35,27 @@ function melhorAluno($array){
 
 	for($l = 0; $l < count($array); $l++){
 		if($array[$l]["nota"] > $maiorNota){
-			$array[$l]["nota"] = $maiorNota;
+			$maiorNota = $array[$l]["nota"];
 		}
 	
+	}
+
+	for($l = 0; $l < count($array); $l++){
 		if($array[$l]["nota"] == $maiorNota){
 			$mlrAluno[$l] = $array[$l]["nome"];
 		}
 	}
 
-	return $mlrAluno;
+	return json_encode($mlrAluno);
 }
 
-echo "A média da turma é " . mediaTurma($turma);
 
+
+echo "A média da turma é " . mediaTurma($turma) . "<br>";
+echo "O melhor aluno é: " . melhorAluno($turma) . "<br>";
+*/
+
+//EXERCICIO 02
 
 
  ?>
