@@ -1,5 +1,5 @@
 <?php 
-// Exercícios - Vetores - 07/10/25
+// Exercícios - Arrays e Matrizes - 07/10/25
 
 /*
 //EXERCÍCIO 01
@@ -56,6 +56,6 @@ echo "O melhor aluno é: " . melhorAluno($turma) . "<br>";
 */
 
 //EXERCICIO 02
-
+ $dbNum = [44, -63, 81, 4, 22, -33, 10, 78, 75, 95];
 
  ?>
