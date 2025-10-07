@@ -157,7 +157,7 @@
 	["ALBERTO", "SANTOS", "M", 38],
 	["BEATRIZ", "PIRACICABA", "F", 25],
 	["CLEIDE", "SÃO PAULO", "F", 49],
-	["DANIEL", "SANTOS", "M", 33],
+	["DANIEL", "SANTOS", "M", 16],
 	["ELIZANDRA", "SALTO", "F", 25],
 	["FABIO", "SÃO PAULO", "M", 50],
 	["GUSTAVO", "BERTIOGA", "M", 15],
