@@ -55,7 +55,46 @@ echo "A média da turma é " . mediaTurma($turma) . "<br>";
 echo "O melhor aluno é: " . melhorAluno($turma) . "<br>";
 */
 
+/*
 //EXERCICIO 02
- $dbNum = [44, -63, 81, 4, 22, -33, 10, 78, 75, 95];
+ $dbNum = [44, 16, -63, 12, 81, 4, 22, -33, 5, 27];
+
+ $par = 0;
+ $imp = 0;
+ $pos = 0;
+ $neg = 0;
+
+ for($i = 0; $i < count($dbNum); $i++){
+ 	if($dbNum[$i] % 2 == 0){
+ 		$par++;
+ 	}
+ 	else{
+ 		$imp++;
+ 	}
+
+ 	if($dbNum[$i] > 0){
+ 		$pos++;
+ 	}
+ 	else{
+ 		$neg++;
+ 	}
+ }
+
+ echo("São $par números pares, $imp números ímpares, $pos números positivos e $neg números negativos");
+ */
+
+ //EXERCÍCIO 03
+ $mNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+ $res = [];
+
+ $nEntrada = 6;
+
+ for($i = 0; $i < 10; $i++){
+ 	$res[$i] = $mNum[$i] * $nEntrada;
+ }
+
+ echo(json_encode($res));
+
 
  ?>
