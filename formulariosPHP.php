@@ -10,8 +10,8 @@
 
 	<form action="cadastrar.php" method="post">
 
-		<h3>Cadastro</h3> <br>
-		<label for="userName">Nome:</label>  <input type="text" name="userName" id="userName"> 
+		<h3>Login</h3> <br>
+		<label for="userName">Nome de Usuário:</label>  <input type="text" name="userName" id="userName"> 
 		
 		<br><br>
 		

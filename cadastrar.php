@@ -3,8 +3,14 @@
  	$userEmail = $_POST['userEmail'];
  	$userPass = $_POST['userPass'];
 
- 	if($userName == 'Pedrinho123' and $userPass == 123456){
- 		echo("Bem-Vindo, $userName!");
+ 	if($userName == "admin" && $userPass == 123456){
+ 		echo "<table>";
+ 		echo "<tr>";
+ 		echo "<td>";
+ 		echo "<b>Bem vindo, $userName ! </b>";
+ 		echo "</td>";
+ 		echo "</tr>";
+ 		echo "</table>";
  	}
  	else{
  		echo("Usuário ou senha inválidos!");
